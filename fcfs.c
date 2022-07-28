@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-// WT(n) = WT(n-1) + BT(n-1)
-// TAT(n) = WT(n) + BT(n)
-// Average WT = Total WT / n
-// Average TAT = Total TAT / n
 void waiting_time(int bt[],int wt[], int n){
     wt[0]=0;
     for (int i = 1; i < n; i++) wt[i] = wt[i-1] + bt[i-1];
