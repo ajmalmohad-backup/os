@@ -42,8 +42,7 @@ int main(){
     int i, j, min_idx; 
     for (i = 0; i < n-1; i++) { 
         min_idx = i; 
-        for (j = i+1; j < n; j++) 
-        if (bt[j] < bt[min_idx]) min_idx = j; 
+        for (j = i+1; j < n; j++) if (bt[j] < bt[min_idx]) min_idx = j; 
         swap(&bt[min_idx], &bt[i]); 
         swap(&sp[min_idx], &sp[i]); 
     } 
